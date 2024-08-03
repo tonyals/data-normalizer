@@ -1,4 +1,4 @@
-package br.com.tony.normalizer.processor;
+package br.com.tony.normalizer.domain;
 
 import java.util.List;
 

@@ -1,5 +1,7 @@
 package br.com.tony.normalizer.processor;
 
+import br.com.tony.normalizer.domain.NormalizerProcessor;
+import br.com.tony.normalizer.domain.Result;
 import br.com.tony.normalizer.util.StringNormalizer;
 
 import java.util.ArrayList;

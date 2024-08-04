@@ -9,9 +9,7 @@ public interface NormalizeProcessor {
         NormalizeProcessor.WithRule<T> forValue(T value);
     }
     interface WithRule<T> {
-        NormalizeProcessor.ProcessorResult<T> withRule(NormalizeRule<T> normalizeRule);
-    }
-    interface ProcessorResult<T> {
+        NormalizeProcessor.WithRule<T> withRule(NormalizeRule<T> normalizeRule);
         Result<T> apply();
     }
 }

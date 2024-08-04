@@ -4,20 +4,20 @@ import br.com.tony.normalizer.processor.NormalizeProcessorImpl;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class RemoveAccentsNormalizeRuleTest {
+class UpperCaseNormalizeRuleTest {
 
     @ParameterizedTest
     @CsvSource({
-            "çÇáéíóúýÁ, cCaeiouyA",
-            "João Nóbrega, Joao Nobrega",
-            "São Paulo, Sao Paulo"
+            "cCaeiouyA, CCAEIOUYA",
+            "Joao Nobrega, JOAO NOBREGA",
+            "Sao Paulo, SAO PAULO"
     })
-    void shouldRemoveAccentsWhenUseRemoveAccentsRule(String value, String expectedValue) {
+    void shouldTransformValueToUpperCaseWhenApplyUpperCaseNormalizeRule(String value, String expectedValue) {
         var result = new NormalizeProcessorImpl<String>()
                 .forValue(value)
-                .withRule(new RemoveAccentsNormalizeRule())
+                .withRule(new UpperCaseNormalizeRule())
                 .apply();
 
         assertEquals(expectedValue, result.value());

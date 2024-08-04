@@ -6,7 +6,7 @@ import org.junit.jupiter.params.provider.CsvSource;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class UpperCaseNormalizeRuleTest {
+class UpperCaseRuleTest {
 
     @ParameterizedTest
     @CsvSource({
@@ -17,7 +17,7 @@ class UpperCaseNormalizeRuleTest {
     void shouldTransformValueToUpperCaseWhenApplyUpperCaseNormalizeRule(String value, String expectedValue) {
         var result = new NormalizeProcessorImpl<String>()
                 .forValue(value)
-                .withRule(new UpperCaseNormalizeRule())
+                .withRule(new UpperCaseRule())
                 .apply();
 
         assertEquals(expectedValue, result.value());

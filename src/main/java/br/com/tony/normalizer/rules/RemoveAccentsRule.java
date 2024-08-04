@@ -4,7 +4,7 @@ import br.com.tony.normalizer.processor.Result;
 
 import java.text.Normalizer;
 
-public class RemoveAccentsNormalizeRule implements NormalizeRule<String> {
+public class RemoveAccentsRule implements Rule<String> {
 
     @Override
     public Result<String> apply(String value) {

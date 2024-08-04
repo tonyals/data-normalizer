@@ -1,7 +1,7 @@
 package br.com.tony.normalizer.processor;
 
-import br.com.tony.normalizer.rules.RemoveAccentsNormalizeRule;
-import br.com.tony.normalizer.rules.UpperCaseNormalizeRule;
+import br.com.tony.normalizer.rules.RemoveAccentsRule;
+import br.com.tony.normalizer.rules.UpperCaseRule;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
@@ -22,8 +22,8 @@ class NormalizeProcessorImplTest {
     void shouldApplyAllRulesWhenProvideMoreThanOneRule(String value, String expectedValue) {
         var result = new NormalizeProcessorImpl<String>()
                 .forValue(value)
-                .withRule(new RemoveAccentsNormalizeRule())
-                .withRule(new UpperCaseNormalizeRule())
+                .withRule(new RemoveAccentsRule())
+                .withRule(new UpperCaseRule())
                 .apply();
 
         assertEquals(expectedValue, result.value());

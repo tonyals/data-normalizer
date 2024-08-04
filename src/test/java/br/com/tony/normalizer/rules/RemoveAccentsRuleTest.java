@@ -6,7 +6,7 @@ import org.junit.jupiter.params.provider.CsvSource;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class RemoveAccentsNormalizeRuleTest {
+class RemoveAccentsRuleTest {
 
     @ParameterizedTest
     @CsvSource({
@@ -17,7 +17,7 @@ class RemoveAccentsNormalizeRuleTest {
     void shouldRemoveAccentsWhenUseRemoveAccentsRule(String value, String expectedValue) {
         var result = new NormalizeProcessorImpl<String>()
                 .forValue(value)
-                .withRule(new RemoveAccentsNormalizeRule())
+                .withRule(new RemoveAccentsRule())
                 .apply();
 
         assertEquals(expectedValue, result.value());

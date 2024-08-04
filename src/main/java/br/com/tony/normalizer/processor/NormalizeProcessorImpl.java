@@ -1,6 +1,6 @@
 package br.com.tony.normalizer.processor;
 
-import br.com.tony.normalizer.rules.NormalizeRule;
+import br.com.tony.normalizer.rules.Rule;
 
 import java.security.InvalidParameterException;
 import java.util.ArrayList;
@@ -8,7 +8,7 @@ import java.util.List;
 
 public class NormalizeProcessorImpl<T> implements NormalizeProcessor.ForValue<T>, NormalizeProcessor.WithRule<T> {
 
-    private final List<NormalizeRule<T>> normalizeRules = new ArrayList<>();
+    private final List<Rule<T>> rules = new ArrayList<>();
     private T value;
 
     @Override
@@ -19,15 +19,15 @@ public class NormalizeProcessorImpl<T> implements NormalizeProcessor.ForValue<T>
     }
 
     @Override
-    public NormalizeProcessor.WithRule<T> withRule(NormalizeRule<T> normalizeRule) {
-        if (normalizeRule == null) throw new InvalidParameterException("Rule cannot be null");
-        this.normalizeRules.add(normalizeRule);
+    public NormalizeProcessor.WithRule<T> withRule(Rule<T> rule) {
+        if (rule == null) throw new InvalidParameterException("Rule cannot be null");
+        this.rules.add(rule);
         return this;
     }
 
     @Override
     public Result<T> apply() {
-        this.normalizeRules.forEach(n -> {
+        this.rules.forEach(n -> {
             var r = n.apply(value);
             this.value = r.value();
         });

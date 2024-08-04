@@ -3,14 +3,13 @@ package br.com.tony.normalizer.rules;
 import br.com.tony.normalizer.processor.Result;
 
 import java.text.Normalizer;
-import java.util.ArrayList;
 
 public class RemoveAccentsNormalizeRule implements NormalizeRule<String> {
 
     @Override
     public Result<String> apply(String value) {
         var result = removeAccents(value);
-        return new Result<>(result, new ArrayList<>());
+        return new Result<>(result);
     }
 
     private String removeAccents(String value) {

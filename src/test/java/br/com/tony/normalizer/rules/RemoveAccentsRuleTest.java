@@ -1,6 +1,6 @@
 package br.com.tony.normalizer.rules;
 
-import br.com.tony.normalizer.processor.NormalizeProcessorImpl;
+import br.com.tony.normalizer.processor.impl.NormalizeProcessorImpl;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
 

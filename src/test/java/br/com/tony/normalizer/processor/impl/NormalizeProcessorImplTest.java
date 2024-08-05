@@ -1,4 +1,4 @@
-package br.com.tony.normalizer.processor;
+package br.com.tony.normalizer.processor.impl;
 
 import br.com.tony.normalizer.rules.RemoveAccentsRule;
 import br.com.tony.normalizer.rules.UpperCaseRule;
@@ -7,6 +7,7 @@ import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
 
 import java.security.InvalidParameterException;
+import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
@@ -22,8 +23,7 @@ class NormalizeProcessorImplTest {
     void shouldApplyAllRulesWhenProvideMoreThanOneRule(String value, String expectedValue) {
         var result = new NormalizeProcessorImpl<String>()
                 .forValue(value)
-                .withRule(new RemoveAccentsRule())
-                .withRule(new UpperCaseRule())
+                .withRules(List.of(new RemoveAccentsRule(), new UpperCaseRule()))
                 .apply();
 
         assertEquals(expectedValue, result.value());
@@ -42,5 +42,13 @@ class NormalizeProcessorImplTest {
                 .forValue("any value");
 
         assertThrows(InvalidParameterException.class, () -> processor.withRule(null));
+    }
+
+    @Test
+    void shouldThrowInvalidParameterExceptionWhenRuleListIsNull() {
+        var processor = new NormalizeProcessorImpl<String>()
+                .forValue("any value");
+
+        assertThrows(InvalidParameterException.class, () -> processor.withRules(null));
     }
 }

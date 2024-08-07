@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36" version="24.7.6">
+  <diagram name="Page-1" id="EvaXMVSm-afYE3fHvp43">
+    <mxGraphModel dx="2785" dy="1787" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="M_ErLMQzYnSDCNVNs1f_-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;fontFamily=Comic Sans MS;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="M_ErLMQzYnSDCNVNs1f_-1" target="M_ErLMQzYnSDCNVNs1f_-11" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-280" y="220" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="M_ErLMQzYnSDCNVNs1f_-1" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;Interface&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;b&gt;NormalizerProcessorResult&amp;lt;T&amp;gt;&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;+ apply(): Result&amp;lt;T&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;fontFamily=Comic Sans MS;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
+          <mxGeometry x="-520" y="235" width="340" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="M_ErLMQzYnSDCNVNs1f_-11" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Record&lt;/b&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Result&amp;lt;T&amp;gt;&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ value: T&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;fontFamily=Comic Sans MS;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="-460" y="60" width="220" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="M_ErLMQzYnSDCNVNs1f_-13" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Class&lt;/b&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;RemoveAccentsRule&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;+ apply(T value): Result&amp;lt;T&amp;gt;&lt;/span&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;fontFamily=Comic Sans MS;fillColor=#DEDEDE;fontColor=#333333;strokeColor=#666666;fontSize=12;" parent="1" vertex="1">
+          <mxGeometry x="-1180" width="180" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="XoNSXpvgdDnsbnnrPtlx-7" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;Interface&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;b&gt;Rule&amp;lt;T&amp;gt;&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;+ apply(): Result&amp;lt;T&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;fontFamily=Comic Sans MS;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
+          <mxGeometry x="-1310" y="-180" width="190" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="XoNSXpvgdDnsbnnrPtlx-8" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;fontFamily=Comic Sans MS;entryX=0.75;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" parent="1" source="M_ErLMQzYnSDCNVNs1f_-13" target="XoNSXpvgdDnsbnnrPtlx-7" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="-1465" y="80" as="sourcePoint" />
+            <mxPoint x="-1570" y="-50" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XoNSXpvgdDnsbnnrPtlx-10" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Class&lt;/b&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;UpperCaseRule&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;+ apply(T value): Result&amp;lt;T&amp;gt;&lt;/span&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;fontFamily=Comic Sans MS;fillColor=#DEDEDE;fontColor=#333333;strokeColor=#666666;fontSize=12;" parent="1" vertex="1">
+          <mxGeometry x="-1400" width="180" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="XoNSXpvgdDnsbnnrPtlx-11" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;fontFamily=Comic Sans MS;entryX=0.25;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" parent="1" source="XoNSXpvgdDnsbnnrPtlx-10" target="XoNSXpvgdDnsbnnrPtlx-7" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="-1080" y="10" as="sourcePoint" />
+            <mxPoint x="-1157" y="-70" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XoNSXpvgdDnsbnnrPtlx-13" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;Class&lt;/i&gt;&lt;br&gt;&lt;b&gt;NormalizerProcessorImpl&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ forValue(T value): NormalizeProcessor.WithRule&amp;lt;T&amp;gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ withRule(Rule&amp;lt;T&amp;gt; rule): NormalizeProcessor.WithRule&amp;lt;T&amp;gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ apply(): Result&amp;lt;T&amp;gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;fontFamily=Comic Sans MS;fillColor=#DEDEDE;strokeColor=#666666;fontColor=#333333;" parent="1" vertex="1">
+          <mxGeometry x="-940" y="590" width="340" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="XoNSXpvgdDnsbnnrPtlx-14" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;fontFamily=Comic Sans MS;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.75;exitY=0;exitDx=0;exitDy=0;" parent="1" source="XoNSXpvgdDnsbnnrPtlx-13" target="M_ErLMQzYnSDCNVNs1f_-1" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="140" y="290" as="sourcePoint" />
+            <mxPoint x="188" y="210" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yhg8fg_Ix-Y9zwDXO7cV-14" value="Implements" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];sketch=1;hachureGap=4;jiggle=2;curveFitting=1;fontFamily=Comic Sans MS;" parent="XoNSXpvgdDnsbnnrPtlx-14" connectable="0" vertex="1">
+          <mxGeometry x="0.0234" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yhg8fg_Ix-Y9zwDXO7cV-1" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;Interface&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;b&gt;NormalizerProcessorForValue&amp;lt;T&amp;gt;&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ forValue(T value): NormalizeProcessorWithRule&amp;lt;T&amp;gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;fontFamily=Comic Sans MS;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
+          <mxGeometry x="-1370" y="240" width="340" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="yhg8fg_Ix-Y9zwDXO7cV-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Comic Sans MS;" parent="1" source="yhg8fg_Ix-Y9zwDXO7cV-2" target="XoNSXpvgdDnsbnnrPtlx-7" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yhg8fg_Ix-Y9zwDXO7cV-2" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;Interface&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;b&gt;NormalizerProcessorWithRule&amp;lt;T&amp;gt;&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;+ withRule(Rule&amp;lt;T&amp;gt; rule): NormalizeProcessorResult&amp;lt;T&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ withRules(List&amp;lt;Rule&amp;lt;T&amp;gt;&amp;gt; rules): NormalizeProcessorResult&amp;lt;T&amp;gt;&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;fontFamily=Comic Sans MS;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
+          <mxGeometry x="-950" y="230" width="360" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="yhg8fg_Ix-Y9zwDXO7cV-7" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;fontFamily=Comic Sans MS;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" parent="1" source="XoNSXpvgdDnsbnnrPtlx-13" target="yhg8fg_Ix-Y9zwDXO7cV-2" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="-600" y="490" as="sourcePoint" />
+            <mxPoint x="-290" y="355" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yhg8fg_Ix-Y9zwDXO7cV-13" value="Implements" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];sketch=1;hachureGap=4;jiggle=2;curveFitting=1;fontFamily=Comic Sans MS;" parent="yhg8fg_Ix-Y9zwDXO7cV-7" connectable="0" vertex="1">
+          <mxGeometry x="0.0545" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yhg8fg_Ix-Y9zwDXO7cV-8" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;fontFamily=Comic Sans MS;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.25;exitY=0;exitDx=0;exitDy=0;" parent="1" source="XoNSXpvgdDnsbnnrPtlx-13" target="yhg8fg_Ix-Y9zwDXO7cV-1" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="-755" y="620" as="sourcePoint" />
+            <mxPoint x="-760" y="360" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yhg8fg_Ix-Y9zwDXO7cV-12" value="Implements" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];sketch=1;hachureGap=4;jiggle=2;curveFitting=1;fontFamily=Comic Sans MS;" parent="yhg8fg_Ix-Y9zwDXO7cV-8" connectable="0" vertex="1">
+          <mxGeometry x="-0.0307" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yhg8fg_Ix-Y9zwDXO7cV-10" value="Use" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;fontFamily=Comic Sans MS;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="yhg8fg_Ix-Y9zwDXO7cV-1" target="yhg8fg_Ix-Y9zwDXO7cV-2" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="-1090" y="380" as="sourcePoint" />
+            <mxPoint x="-930" y="380" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yhg8fg_Ix-Y9zwDXO7cV-11" value="Use" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;fontFamily=Comic Sans MS;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="yhg8fg_Ix-Y9zwDXO7cV-2" target="M_ErLMQzYnSDCNVNs1f_-1" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="-1100" y="300" as="sourcePoint" />
+            <mxPoint x="-940" y="300" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

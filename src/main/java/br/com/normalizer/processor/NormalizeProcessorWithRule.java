@@ -1,6 +1,6 @@
-package br.com.tony.normalizer.processor;
+package br.com.normalizer.processor;
 
-import br.com.tony.normalizer.rules.Rule;
+import br.com.normalizer.rules.Rule;
 
 import java.util.List;
 

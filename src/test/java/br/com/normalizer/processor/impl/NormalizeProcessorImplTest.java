@@ -1,7 +1,7 @@
-package br.com.tony.normalizer.processor.impl;
+package br.com.normalizer.processor.impl;
 
-import br.com.tony.normalizer.rules.RemoveAccentsRule;
-import br.com.tony.normalizer.rules.UpperCaseRule;
+import br.com.normalizer.rules.RemoveAccentsRule;
+import br.com.normalizer.rules.UpperCaseRule;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;

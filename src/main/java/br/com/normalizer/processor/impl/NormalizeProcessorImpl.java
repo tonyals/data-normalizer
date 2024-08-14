@@ -1,7 +1,10 @@
-package br.com.tony.normalizer.processor.impl;
+package br.com.normalizer.processor.impl;
 
-import br.com.tony.normalizer.processor.*;
-import br.com.tony.normalizer.rules.Rule;
+import br.com.normalizer.processor.NormalizeProcessorForValue;
+import br.com.normalizer.processor.NormalizeProcessorResult;
+import br.com.normalizer.processor.NormalizeProcessorWithRule;
+import br.com.normalizer.processor.Result;
+import br.com.normalizer.rules.Rule;
 
 import java.security.InvalidParameterException;
 import java.util.ArrayList;
